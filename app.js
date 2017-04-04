@@ -1,9 +1,14 @@
 'use strict';
-console.log("sdjfdkjf");
 
-var sushi = prompt ('do you think I like sushi?');
-if (sushi.trim().toLowerCase() == 'yes'){
-  alert ('you were correct');
-}else {
-alert (' dsfsajkjosi');
+
+var favoriteart = prompt ('Is Rococo my favorite period of art?');
+if (favoriteart.trim().toLowerCase() == "no"){
+  var period = prompt ('Is renaissance my favorite period of art?');
+  if (period.trim().toLowerCase() == "yes"){
+    alert ('You are right!');
+  } else{
+    console.log('You are close!');
+  }
+} else{
+  alert ('You are wrong!');
 }
