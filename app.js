@@ -49,20 +49,27 @@ for (var guess = 0; guess  < 4 && stop; guess++){
     alert('keep guessing!')
   }
 }
+
 var countries = ['spain', 'italy', 'greece'];
+var countrylength = countries.length;
 var guessCountry;
 var Done = true;
-  for (var game = 0; game < 7 && Done; game++){
-    guessCountry = prompt ('What is my favorite country to visit?');
-      if (guessCountry === countries[0]|| guessCountry === countries[1]|| guessCountry === countries[2] || guessCountry === countries [3]){
-        Done = !Done;
-        alert('I\'d love to visit' + ' ' + countries);
-        tally ++;
-      }else if (game === 6){
-        Done = !Done;
-        alert('I\'d love to visit' + ' ' + countries);
-      }else {
-        alert('keep guessing!')
-      }
+for (var game = 0; game < 7 && Done; game++){
+  guessCountry = prompt ('What is my favorite country to visit?');
+  for (var i = 0; i < countrylength; i++){
+    if (guessCountry.trim().toLowerCase() === countries[i]){
+      i = countrylength;
+      alert('I\'d love to visit' + ' ' + countries);
+      tally ++;
+    } else if (game === 6){
+       alert('You are out of chance!');
+       Done = !Done;
+     }  else if(i === countrylength - 1) {
+       alert('keep guessing!');
+     }
   }
+
+
+
+
   console.log(tally);
