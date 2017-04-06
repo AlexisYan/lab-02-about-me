@@ -1,5 +1,6 @@
 'use strict';
 
+function funcTally(){
 var tally = 0;
 var favoriteart = prompt ('Is renaissance my favorite period of art?');
   if (favoriteart.trim().toLowerCase() == 'yes'){
@@ -8,6 +9,10 @@ var favoriteart = prompt ('Is renaissance my favorite period of art?');
   }else{
     alert('wrong');
   }
+  return favoriteart;
+}
+
+function funFavFood(){
 var favoriteFood = prompt ('Is pho my favorite food?');
   if (favoriteFood.trim().toLowerCase() == 'yes'){
     alert('right');
@@ -15,6 +20,10 @@ var favoriteFood = prompt ('Is pho my favorite food?');
 }else {
     alert('wrong');
 }
+return favoriteFood;
+}
+
+function funFavColor(){
 var favoriteColor = prompt('Is my favorite color blue?');
   if (favoriteColor.trim().toLowerCase() == 'no'){
     alert('right');
@@ -22,6 +31,10 @@ var favoriteColor = prompt('Is my favorite color blue?');
   }else {
     alert('wrong');
   }
+  return favoriteColor;
+}
+
+function funcAnimal(){
 var favoritanimal = prompt('Is my favorite animal cat?');
   if(favoritanimal.trim().toLowerCase() == 'yes'){
     alert('right');
@@ -29,6 +42,10 @@ var favoritanimal = prompt('Is my favorite animal cat?');
   }else {
     alert ('wrong');
   }
+  return favoriteanimal;
+}
+
+function funcQues(){
 var question = prompt ('Do I think stealing from other people is right?');
   if (question.trim().toLowerCase() == 'no'){
     alert('right');
@@ -36,6 +53,10 @@ var question = prompt ('Do I think stealing from other people is right?');
   }else {
     alert('wrong');
   }
+return question;
+}
+
+function funcFood(){
 var number;
 var stop = true;
 for (var guess = 0; guess  < 4 && stop; guess++){
@@ -49,6 +70,9 @@ for (var guess = 0; guess  < 4 && stop; guess++){
     alert('keep guessing!')
   }
 }
+return number;
+}
+function funcCountry(){
 var countries = ['spain', 'italy', 'greece'];
 var guessCountry;
 var Done = true;
@@ -65,4 +89,14 @@ var Done = true;
         alert('keep guessing!')
       }
   }
+return guessCountry;
+}
   console.log(tally);
+
+funcTally();
+funFavFood();
+funFavColor();
+funcAnimal();
+funcQues();
+funcFood();
+funcCountry();
