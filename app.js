@@ -4,7 +4,7 @@ var tally = 0;
 var favoriteart = prompt ('Is renaissance my favorite period of art?');
   if (favoriteart.trim().toLowerCase() == 'yes'){
     alert ('Right');
-    tally ++;
+    tally++;
   }else{
     alert('wrong');
   }
