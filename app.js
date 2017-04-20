@@ -11,7 +11,7 @@ var favoriteart = prompt ('Is renaissance my favorite period of art?');
 var favoriteFood = prompt ('Is pho my favorite food?');
   if (favoriteFood.trim().toLowerCase() == 'yes'){
     alert('right');
-    tally ++;
+    tally++;
 }else {
     alert('wrong');
 }
@@ -56,9 +56,10 @@ var guessCountry;
 var Done = true;
 for (var game = 0; game < 7 && Done; game++){
   guessCountry = prompt ('What is my favorite country to visit?');
-  for (var i = 0; i < countrylength; i++){
+  for (var i = 0; i < countrylength && Done; i++){
     if (guessCountry.trim().toLowerCase() === countries[i]){
       i = countrylength;
+      Done = !Done;
       alert('I\'d love to visit' + ' ' + countries);
       tally ++;
     } else if (game === 6){
@@ -67,9 +68,6 @@ for (var game = 0; game < 7 && Done; game++){
      }  else if(i === countrylength - 1) {
        alert('keep guessing!');
      }
-  }
-
-
-
-
+   }
+  };
   console.log(tally);
