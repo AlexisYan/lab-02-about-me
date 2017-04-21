@@ -1,8 +1,8 @@
 'use strict';
 
 function funcTally(){
-var tally = 0;
-var favoriteart = prompt ('Is renaissance my favorite period of art?');
+  var tally = 0;
+  var favoriteart = prompt ('Is renaissance my favorite period of art?');
   if (favoriteart.trim().toLowerCase() == 'yes'){
     alert ('Right');
     tally ++;
@@ -13,18 +13,18 @@ var favoriteart = prompt ('Is renaissance my favorite period of art?');
 }
 
 function funFavFood(){
-var favoriteFood = prompt ('Is pho my favorite food?');
+  var favoriteFood = prompt ('Is pho my favorite food?');
   if (favoriteFood.trim().toLowerCase() == 'yes'){
     alert('right');
     tally ++;
-}else {
+  }else {
     alert('wrong');
-}
-return favoriteFood;
+  }
+  return favoriteFood;
 }
 
 function funFavColor(){
-var favoriteColor = prompt('Is my favorite color blue?');
+  var favoriteColor = prompt('Is my favorite color blue?');
   if (favoriteColor.trim().toLowerCase() == 'no'){
     alert('right');
     tally++;
@@ -35,7 +35,7 @@ var favoriteColor = prompt('Is my favorite color blue?');
 }
 
 function funcAnimal(){
-var favoritanimal = prompt('Is my favorite animal cat?');
+  var favoritanimal = prompt('Is my favorite animal cat?');
   if(favoritanimal.trim().toLowerCase() == 'yes'){
     alert('right');
     tally++;
@@ -46,52 +46,52 @@ var favoritanimal = prompt('Is my favorite animal cat?');
 }
 
 function funcQues(){
-var question = prompt ('Do I think stealing from other people is right?');
+  var question = prompt ('Do I think stealing from other people is right?');
   if (question.trim().toLowerCase() == 'no'){
     alert('right');
     tally++;
   }else {
     alert('wrong');
   }
-return question;
+  return question;
 }
 
 function funcFood(){
-var number;
-var stop = true;
-for (var guess = 0; guess  < 4 && stop; guess++){
-  number = prompt ('how many meals do I eat every day?');
-  if (number === '11' ){
-    stop = !stop;
-    tally++;
-  }else if (guess === 3){
-    alert('you don\'t have chance anymore!')
-  } else{
-    alert('keep guessing!')
+  var number;
+  var stop = true;
+  for (var guess = 0; guess  < 4 && stop; guess++){
+    number = prompt ('how many meals do I eat every day?');
+    if (number === '11' ){
+      stop = !stop;
+      tally++;
+    }else if (guess === 3){
+      alert('you don\'t have chance anymore!')
+    } else{
+      alert('keep guessing!')
+    }
   }
-}
-return number;
+  return number;
 }
 function funcCountry(){
-var countries = ['spain', 'italy', 'greece'];
-var guessCountry;
-var Done = true;
+  var countries = ['spain', 'italy', 'greece'];
+  var guessCountry;
+  var Done = true;
   for (var game = 0; game < 7 && Done; game++){
     guessCountry = prompt ('What is my favorite country to visit?');
-      if (guessCountry === countries[0]|| guessCountry === countries[1]|| guessCountry === countries[2] || guessCountry === countries [3]){
-        Done = !Done;
-        alert('I\'d love to visit' + ' ' + countries);
-        tally ++;
-      }else if (game === 6){
-        Done = !Done;
-        alert('I\'d love to visit' + ' ' + countries);
-      }else {
-        alert('keep guessing!')
-      }
+    if (guessCountry === countries[0] || guessCountry === countries[1] || guessCountry === countries[2] || guessCountry === countries [3]){
+      Done = !Done;
+      alert('I\'d love to visit' + ' ' + countries);
+      tally ++;
+    }else if (game === 6){
+      Done = !Done;
+      alert('I\'d love to visit' + ' ' + countries);
+    }else {
+      alert('keep guessing!');
+    }
   }
-return guessCountry;
+  return guessCountry;
 }
-  console.log(tally);
+// console.log(tally);
 
 funcTally();
 funFavFood();
