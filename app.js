@@ -1,7 +1,9 @@
 'use strict';
 
+
+var tally = 0;
+
 function funcTally(){
-  var tally = 0;
   var favoriteart = prompt ('Is renaissance my favorite period of art?');
   if (favoriteart.trim().toLowerCase() == 'yes'){
     alert ('Right');
@@ -42,7 +44,7 @@ function funcAnimal(){
   }else {
     alert ('wrong');
   }
-  return favoriteanimal;
+  return favoritanimal;
 }
 
 function funcQues(){
@@ -65,9 +67,9 @@ function funcFood(){
       stop = !stop;
       tally++;
     }else if (guess === 3){
-      alert('you don\'t have chance anymore!')
+      alert('you don\'t have chance anymore!');
     } else{
-      alert('keep guessing!')
+      alert('keep guessing!');
     }
   }
   return number;
@@ -91,7 +93,6 @@ function funcCountry(){
   }
   return guessCountry;
 }
-// console.log(tally);
 
 funcTally();
 funFavFood();
@@ -100,3 +101,5 @@ funcAnimal();
 funcQues();
 funcFood();
 funcCountry();
+
+alert('You got' + ' '+ tally + ' ' + 'out of 7!' );

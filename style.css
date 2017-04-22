@@ -4,19 +4,14 @@
   margin: 0;
   box-sizing: border-box;
 }
-#top-half {
-  height: 50%;
-  background-color: #AA8EB5;
+
+html, body{
+  background-image: url("https://peopledotcom.files.wordpress.com/2011/06/panda-2-660.jpg?w=660");
 }
-#bottom-left{
-  display: inline-block;
-  width: 45%;
-  height: 50%;
-  background-color: grey;
-}
-#bottom-right{
-  display: inline-block;
-  width: 45%;
-  height:50%;
-  background-color: lightblue;
+
+#top-half{
+  background-color: white;
+  opacity: 0.7;
+  margin: 200px auto;
+  text-align: center;
 }
